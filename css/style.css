@@ -38,9 +38,14 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .carta img{
     width: 100%;
     margin: 20% 5%;
+}
+
+.escondido{
+    display: none;
 }
