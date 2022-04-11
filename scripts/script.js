@@ -10,7 +10,7 @@ let par =0;
 function colocarCartas(){
     let numeroDeCartas  = prompt('Quantas cartas ?');
     numeroDeCartas = Number(numeroDeCartas);
-    if(numeroDeCartas >= 4 && numeroDeCartas <= 12 && numeroDeCartas%2 === 0 && typeof numeroDeCartas == "number" ){
+    if(numeroDeCartas >= 4 && numeroDeCartas <= 14 && numeroDeCartas%2 === 0 && typeof numeroDeCartas == "number" ){
         criaCartas(numeroDeCartas);
     }else{
         alert('Erro');
