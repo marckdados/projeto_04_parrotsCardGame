@@ -73,8 +73,8 @@ function selecionarCarta(elemento){
    }
 
     elemento1 = undefined;
-   elemento2 = undefined;
-   venceu()
+    elemento2 = undefined;
+    venceu()
 
 }
 
@@ -87,9 +87,21 @@ function comparador() {
 	return Math.random() - 0.5; 
 }
 
-colocarCartas();
-
 function retornaOrigem(elemento1, elemento2){
     elemento1.classList.remove("rotate");
     elemento2.classList.remove("rotate");
 }
+
+function alerta(){
+    alert(`Você ganhou em ${contador} jogadas !`)
+}
+
+function venceu(){
+    if (par !== total / 2){
+        return;
+    }else{
+        setTimeout(alerta, 1001);
+    }
+}
+
+colocarCartas();
