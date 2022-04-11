@@ -7,11 +7,10 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: aqua;
 }
 
 .container .titulo{
@@ -26,13 +25,14 @@ body{
 }
 
 .section{
-    margin-left: 5%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .section .cartas{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .carta {
@@ -79,3 +79,20 @@ body{
 .escondido{
     display: none;
 }
+@media (max-width: 450px) {
+    .container .titulo{
+      height: 63px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+     font-size: 36px;
+     text-align: center;
+     }
+     .section{
+       flex-direction: column;
+       align-items: center;
+     }
+   
+     .card {
+       margin: 10px 0;
+     }
+   }
